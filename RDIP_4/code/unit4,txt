@@ -1,0 +1,23 @@
+Functionalities are:
+1. First we need to clink on the experiment icon,it dropdown some menu like "select corpus" should be displayed and alighned at center.
+
+2.There will be 3 option to select in dropdown,those are corpus1,corpus2 and corpus3 .then select any one corpus you will get a paragraph is desplayed.
+
+3.And it shows and asked to user to"Enter the number og tokens and types for the selected corpus:".
+
+4.Then 2 rows and two columns presented a table will displayed to enter the needed answers.
+
+5.Then you have to submit the entered answers by clicking submit button.
+
+6.Onclicking submit button user provided answers should be validate.
+
+7.If both answers are correct the box's background color turns to green and under that Right Answer will  displayed and below that there will be another button as 'Continue'.
+  then click Continue button it will disppear and "Now, consider all the tokens with the same 'root' word to be of the same type. Recalculate the number of types."will be displayed
+    Again  will ask for the user to enter new types and below that there is a submit button
+    here we need to make use the concept of stemming to validate the answer.This concept is basically a method of reducing any word to its root word, example is cooking stems from cook, boys stems from boy etc.
+   working stem from work like if the answer is correct it will display Right answer.
+	
+8.If any one answers is incorrect
+     the box's background color turns to red and below that "Wrong Answer" will be displayed and user can try again untill getting correct answer.
+	 
+9.If the user changes the corpuses,everything should disappear and starts from step 3 again.
