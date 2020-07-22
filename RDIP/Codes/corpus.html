@@ -1,32 +1,44 @@
 <!DOCTYPE html>
+<html>
 <head>
 <title>Virtual labs</title>
+	<script src="../Libraries/node_modules/snowball/stemmer/lib/Snowball.min.js" type="text/javascript"></script>
+	<script src="../Libraries/require.js" type="text/javascript"></script>
 	<script src="corpus.js" type="text/javascript"></script>
 	<link href="corpus.css" type="text/css" rel="stylesheet">
-	<meta charset="UTF-8"> </head>
+	<link rel="shortcut icon" href="../../src/themes/maroon-grid/images/logo.jpg">
+	<meta http-equiv="content-type" content="text/html; charset="UTF-8"> </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></head>
 <body>
 <p id="heading">Experiment</p>
-<div id="dropdown">
 <select id="select" onchange= "select()">
 <option value="default">---Select a corpus---</option>
 <option value="corpus1">Corpus 1</option>
 <option value="corpus2">Corpus 2</option>
 <option value="corpus3">Corpus 3</option>
 </select>
+<br><br>
+<div id="msg" style="display:none;">
 <p id="corpusdisplay"></p>
 <p id="msgdisplay"></p>
-<br>
-<div id="msg" >
 <table id="table1">
 <tr><td>#tokens:</td><td><input class="form-control" id="tokens" type="text"></td></tr>
 <tr><td>#types:</td><td><input class="form-control" id="types" type="text"></td></tr>
 </table>
 <br><br>
-<input type="submit" id="submit">
 </div>
-</div>
+<button id="submit" style="display:none;" onclick="tokens_check()" >Submit</button>
+<p id="right"></p>
+<button id="continue" style="display:none;" onclick="nextstep()">Continue</button>
+<div id="newtypes_display" style="display:none;">
+<p id="newmsg" >Now, consider all the tokens with the same 'root' word to be of the same type. Recalculate the number of types.</p>
 
+<p id="table2" ><label>#new types:</label><br>
+<input type="text" id="newtypes">
+</p>
+<button id="submit2" onclick="submit2()" >Submit</button>
+<p id="result"></p>
+</div>	
 </body>
 
 </html>

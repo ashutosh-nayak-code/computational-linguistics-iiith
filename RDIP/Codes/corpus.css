@@ -1,27 +1,80 @@
-#heading{
-font-size: 40px;
+#heading {
+	font-size: 40px;
+	text-align: left;
 }
-#dropdown{
-font-family: sans-serif;
-color: #404040;
-align: center;
-text-align: center;
-margin-top: 50px;
+
+select {
+	height: 30px;
+	width: 150px;
+	text-align: center;
 }
-table,td{
-border: 1px solid #bfbfbf;
-border-collapse: collapse;
-padding: 8px;
+
+body {
+	font-family: sans-serif;
+	color: #404040;
+	align: center;
+	text-align: center;
+	margin-top: 50px;
 }
-#table1{
-width: 10%;
-position: relative;
-left: 45%;
+
+td {
+	border: 1px solid #b2bbc0;
+	border-collapse: collapse;
+	padding: 5px;
 }
-#msg{
-display: none;
+
+#table1 {
+	width: 180px;
+	height: 100px;
+	position: relative;
+	left: 40%;
+	border: 1px solid #b2bbc0;
+	border-collapse: collapse;
 }
-input[type=text]{
-width: 50px;
-heigth: 50px;
+
+#submit {
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+#continue {
+	text-align: center;
+	padding: 3px;
+	cursor: pointer;
+}
+
+input[type=text] {
+	width: 70px;
+	height: 20px;
+	cursor: auto;
+	background-color: "#ffffff";
+}
+
+#right {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#result {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#newtypes{
+	margin: 5px;
+}
+
+#submit2 {
+	width: 70px;
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+	padding: 2px;
+	cursor: pointer;
 }
